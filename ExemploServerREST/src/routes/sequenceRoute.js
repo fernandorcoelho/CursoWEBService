@@ -1,4 +1,4 @@
-const SequenceRoute = require('../controllers/sequenceControler')
+const SequenceRoute = require('../controllers/sequenceController')
 module.exports = (app) => {
     app.post('/sequence', SequenceRoute.post);
     app.put('/sequence', SequenceRoute.put);

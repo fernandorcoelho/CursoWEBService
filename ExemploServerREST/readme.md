@@ -57,7 +57,7 @@ Criar um Web Service usando API REST
  ```
 * criar o arquivo sequenceRoute.js na pasta routes
 ```javascript
-  const SequenceRoute = require('../controllers/sequenceControler')
+  const SequenceRoute = require('../controllers/sequenceController')
   module.exports = (app) => {
      app.post('/sequence', SequenceRoute.post);
      app.put('/sequence', SequenceRoute.put);
@@ -67,7 +67,7 @@ Criar um Web Service usando API REST
   }
 ```
 
-criar o arquivo sequenceControler.js na pasta controllers
+criar o arquivo sequenceController.js na pasta controllers
 ```javascript
 exports.post = (req, res, next) => {
     res.status(201).send('route POST!');
